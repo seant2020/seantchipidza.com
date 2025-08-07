@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=0.5, minimum-scale=0.1, maximum-scale=5.0">
+    <title>Sean Takunda Chipidza | Welcome </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --neon-pink: #0d53ad;
+            --deep-purple: #5d7ec5;
+            --chocolate: #3a2a1e;
+            --metallic: #a1a1a1;
+            --space: #0d0221;
+        }
+    body {
+        min-width: 1200px;
+        overflow-x: auto;
+    }
+    .container {
+        min-width: 1200px;
+    }
+}
+        
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: var(--space);
+            color: white;
+            overflow-x: hidden;
+        }
+        
+        .title-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .neon-text {
+            text-shadow: 0 0 5px var(--neon-pink), 0 0 10px var(--neon-pink);
+        }
+        
+        .glow-box {
+            box-shadow: 0 0 15px rgba(20, 163, 151, 0.5);
+        }
+        
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        .floating-2 {
+            animation: floating 8s ease-in-out infinite 2s;
+        }
+        
+        .floating-3 {
+            animation: floating 7s ease-in-out infinite 1s;
+        }
+        
+        @keyframes floating {
+            0% { transform: translate(0,  0px); }
+            50%  { transform: translate(0, 15px); }
+            100%   { transform: translate(0, -0px); }   
+        }
+        
+        .shape-1 {
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+        
+        .shape-2 {
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        }
+        
+        .shape-3 {
+            clip-path: circle(50% at 50% 50%);
+        }
+        
+        .counter {
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .card-3d {
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+        }
+        
+        .card-3d:hover {
+            transform: rotateY(20deg) rotateX(10deg);
+        }
+        
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px var(--neon-pink);
+        }
+        
+        .contact-input {
+            background: rgba(255,255,255,0.1);
+            border-bottom: 2px solid var(--neon-pink);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-input:focus {
+            background: rgba(255,255,255,0.2);
+            outline: none;
+            border-bottom: 2px solid white;
+        }
+        
+        .btn-neon {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-neon:hover {
+            box-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+        }
+        
+        .btn-neon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: all 0.5s ease;
+        }
+        
+        .btn-neon:hover::before {
+            left: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Floating Background Shapes -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute top-1/4 left-1/4 w-16 h-16 bg-purple-500 opacity-20 rounded-full floating"></div>
+        <div class="absolute top-1/3 right-1/4 w-24 h-24 bg-pink-500 opacity-10 shape-1 floating-2"></div>
+        <div class="absolute bottom-1/4 left-1/3 w-20 h-20 bg-purple-600 opacity-15 shape-2 floating-3"></div>
+        <div class="absolute top-2/3 right-1/3 w-12 h-12 bg-pink-600 opacity-20 shape-3 floating"></div>
+        <div class="absolute bottom-1/3 left-1/5 w-28 h-28 bg-purple-700 opacity-10 shape-1 floating-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-70 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold title-font neon-text">
+                STC
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-white hover:text-pink-400 transition">Home</a>
+                <a href="#networth" class="text-white hover:text-pink-400 transition">Net Worth</a>
+                <a href="#bio" class="text-white hover:text-pink-400 transition">Bio</a>
+                <a href="#gallery" class="text-white hover:text-pink-400 transition">Gallery</a>
+                <a href="#contact" class="text-white hover:text-pink-400 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden parallax" style="background-image: linear-gradient(to bottom, rgba(13, 2, 33, 0.8), rgba(93, 46, 140, 0.5))">
+        <!-- Animated Robots Carrying "STC Inc." -->
+        <div id="hero-robots" class="absolute left-0 bottom-12 w-full z-20 pointer-events-none">
+            <div class="flex justify-center space-x-24 md:space-x-40">
+                <!-- Robot 1 -->
+                <div class="hero-robot" style="animation-delay: 0s;">
+                    <svg width="70" height="110" viewBox="0 0 80 120" fill="none">
+                        <rect x="20" y="40" width="40" height="50" rx="10" fill="#a78bfa" stroke="#7c3aed" stroke-width="3"/>
+                        <rect x="25" y="15" width="30" height="30" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="3"/>
+                        <circle cx="35" cy="30" r="4" fill="#7c3aed"/>
+                        <circle cx="45" cy="30" r="4" fill="#7c3aed"/>
+                        <rect x="38" y="5" width="4" height="12" rx="2" fill="#a78bfa"/>
+                        <circle cx="40" cy="5" r="3" fill="#7c3aed"/>
+                        <rect x="10" y="55" width="10" height="30" rx="5" fill="#a78bfa"/>
+                        <rect x="60" y="55" width="10" height="30" rx="5" fill="#a78bfa"/>
+                        <rect x="28" y="90" width="7" height="25" rx="3.5" fill="#7c3aed" class="left-leg"/>
+                        <rect x="45" y="90" width="7" height="25" rx="3.5" fill="#7c3aed" class="right-leg"/>
+                        <!-- Carrying sign -->
+                        <rect x="10" y="10" width="60" height="18" rx="6" fill="#22223b" stroke="#a78bfa" stroke-width="2"/>
+                        <text x="40" y="24" text-anchor="middle" fill="#a78bfa" font-size="12" font-family="Orbitron, sans-serif" font-weight="bold">STC Inc.</text>
+                    </svg>
+                </div>
+                <!-- Robot 2 -->
+                <div class="hero-robot" style="animation-delay: 1.2s;">
+                    <svg width="70" height="110" viewBox="0 0 80 120" fill="none">
+                        <rect x="20" y="40" width="40" height="50" rx="10" fill="#a78bfa" stroke="#7c3aed" stroke-width="3"/>
+                        <rect x="25" y="15" width="30" height="30" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="3"/>
+                        <circle cx="35" cy="30" r="4" fill="#7c3aed"/>
+                        <circle cx="45" cy="30" r="4" fill="#7c3aed"/>
+                        <rect x="38" y="5" width="4" height="12" rx="2" fill="#a78bfa"/>
+                        <circle cx="40" cy="5" r="3" fill="#7c3aed"/>
+                        <rect x="10" y="55" width="10" height="30" rx="5" fill="#a78bfa"/>
+                        <rect x="60" y="55" width="10" height="30" rx="5" fill="#a78bfa"/>
+                        <rect x="28" y="90" width="7" height="25" rx="3.5" fill="#7c3aed" class="left-leg"/>
+                        <rect x="45" y="90" width="7" height="25" rx="3.5" fill="#7c3aed" class="right-leg"/>
+                        <!-- Carrying sign -->
+                        <rect x="10" y="10" width="60" height="18" rx="6" fill="#22223b" stroke="#a78bfa" stroke-width="2"/>
+                        <text x="40" y="24" text-anchor="middle" fill="#a78bfa" font-size="12" font-family="Orbitron, sans-serif" font-weight="bold">STC Inc.</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between z-10">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 title-font neon-text">
+                    <span id="animated-name"></span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl mb-6 text-red-300">
+                    <span id="animated-role"></span>
+                </h2>
+                <p class="text-gray-300 mb-8 text-lg max-w-lg">
+                    Visionary thinker, creative strategist, and digital innovator pushing boundaries in the tech space.
+                </p>
+                <button class="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-bold btn-neon transition-all">
+                    Explore More
+                </button>
+                <p class="mt-8 text-lime-400 text-lg font-semibold">You can get something like this from me.</p>
+            </div>
+            <div class="md:w-1/2 flex justify-center relative">
+                <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-purple-600 to-pink-500 rounded-full flex items-center justify-center glow-box floating">
+                    <div class="w-60 h-60 md:w-72 md:h-72 bg-gray-800 rounded-full overflow-hidden border-4 border-white">
+                        <!-- Placeholder for avatar image -->
+                        <div class="w-full h-full bg-gray-700 flex items-center justify-center">
+                            <i class="fas fa-user-astronaut text-6xl text-pink-400"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-purple-800 opacity-30 rounded-full blur-xl"></div>
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-pink-700 opacity-20 rounded-full blur-xl"></div>
+            </div>
+        </div>
+        <style>
+            .glow-purple {
+                color: #a78bfa;
+                text-shadow: 0 0 8px #a78bfa, 0 0 16px #7c3aed;
+                font-weight: bold;
+            }
+            #hero-robots {
+                height: 120px;
+                pointer-events: none;
+            }
+            .hero-robot {
+                animation: robot-walk 7s linear infinite;
+                will-change: transform;
+            }
+            @keyframes robot-walk {
+                0% { transform: translateX(-60vw);}
+                10% { transform: translateX(-40vw);}
+                30% { transform: translateX(-10vw);}
+                50% { transform: translateX(10vw);}
+                70% { transform: translateX(30vw);}
+                90% { transform: translateX(50vw);}
+                100% { transform: translateX(70vw);}
+            }
+        </style>
+        <script>
+            // Animated typing effect for name and role, with glowing purple "Takunda"
+            document.addEventListener('DOMContentLoaded', function () {
+                const nameParts = [
+                    { text: "SEAN ", className: "" },
+                    { text: "TAKUNDA", className: "glow-purple" },
+                    { text: " CHIPIDZA", className: "" }
+                ];
+                const roleText = "I'm a Developer";
+                const nameEl = document.getElementById('animated-name');
+                const roleEl = document.getElementById('animated-role');
+                let nameIdx = 0, partIdx = 0, charIdx = 0, nameHTML = "";
+
+                function typeName() {
+                    if (partIdx < nameParts.length) {
+                        const part = nameParts[partIdx];
+                        if (charIdx <= part.text.length) {
+                            nameEl.innerHTML = nameHTML +
+                                `<span class="${part.className}">${part.text.slice(0, charIdx)}</span>` +
+                                '<span class="border-r-2 border-pink-400 animate-pulse"></span>';
+                            charIdx++;
+                            setTimeout(typeName, 90);
+                        } else {
+                            nameHTML += `<span class="${part.className}">${part.text}</span>`;
+                            partIdx++;
+                            charIdx = 0;
+                            setTimeout(typeName, 120);
+                        }
+                    } else {
+                        nameEl.innerHTML = nameHTML;
+                        setTimeout(typeRole, 400);
+                    }
+                }
+
+                let roleIdx = 0;
+                function typeRole() {
+                    if (roleIdx <= roleText.length) {
+                        roleEl.innerHTML = roleText.slice(0, roleIdx) + '<span class="border-r-2 border-purple-400 animate-pulse"></span>';
+                        roleIdx++;
+                        setTimeout(typeRole, 70);
+                    } else {
+                        roleEl.innerHTML = roleText;
+                    }
+                }
+
+                typeName();
+
+                // Animate robot legs (simple swing)
+                function animateRobotLegs() {
+                    document.querySelectorAll('.hero-robot').forEach(robot => {
+                        let step = 0;
+                        function swing() {
+                            step += 0.15;
+                            const leftLeg = robot.querySelector('.left-leg');
+                            const rightLeg = robot.querySelector('.right-leg');
+                            if (leftLeg && rightLeg) {
+                                leftLeg.setAttribute('transform', `rotate(${Math.sin(step)*18},31.5,90)`);
+                                rightLeg.setAttribute('transform', `rotate(${-Math.sin(step)*18},48.5,90)`);
+                            }
+                            requestAnimationFrame(swing);
+                        }
+                        swing();
+                    });
+                }
+                animateRobotLegs();
+            });
+        </script>
+    </section>
+
+    <!-- Net Worth Section -->
+    <section id="networth" class="py-20 bg-gradient-to-b from-purple-900 to-gray-900 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center title-font neon-text">Net Worth</h2>
+            
+            <div class="max-w-4xl mx-auto bg-gray-800 bg-opacity-50 backdrop-blur-md rounded-xl p-8 border border-gray-700 glow-box">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h3 class="text-2xl font-bold mb-4 text-pink-400">Financial Overview</h3>
+                        <p class="text-gray-300 mb-6">
+                            Still working on it but can not reveal what i do not have .
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-900 bg-opacity-70 p-4 rounded-lg">
+                                <p class="text-gray-400 text-sm">Assets</p>
+                                <p class="text-xl font-bold text-green-400">$300</p>
+                            </div>
+                            <div class="bg-gray-900 bg-opacity-70 p-4 rounded-lg">
+                                <p class="text-gray-400 text-sm">Investments</p>
+                                <p class="text-xl font-bold text-blue-400">$500</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 flex flex-col items-center">
+                        <div class="relative">
+                            <div class="w-48 h-48 md:w-64 md:h-64 rounded-full border-8 border-purple-600 flex items-center justify-center">
+                                <div class="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-pink-500 flex items-center justify-center bg-gray-900">
+                                    <div class="text-center">
+                                        <p class="text-gray-400 text-sm">Total Net Worth To</p>
+                                        <p class="text-3xl md:text-4xl font-bold text-white counter" id="networth-counter">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute -top-4 -right-4 w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center glow-box">
+                                <i class="fas fa-chart-line text-white text-xl"></i>
+                            </div>
+                            <script>
+                                // Update the animation to count to $800
+                                function animateValue(id, start, end, duration) {
+                                    const obj = document.getElementById(id);
+                                    let startTimestamp = null;
+                                    const step = (timestamp) => {
+                                        if (!startTimestamp) startTimestamp = timestamp;
+                                        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                                        const value = Math.floor(progress * (end - start) + start);
+                                        obj.innerHTML = "$" + value.toLocaleString();
+                                        if (progress < 1) {
+                                            window.requestAnimationFrame(step);
+                                        }
+                                    };
+                                    window.requestAnimationFrame(step);
+                                }
+
+                                // Start animation when net worth section is in view
+                                const observer = new IntersectionObserver((entries) => {
+                                    entries.forEach(entry => {
+                                        if (entry.isIntersecting) {
+                                            animateValue("networth-counter", 0, 800, 2000);
+                                            observer.unobserve(entry.target);
+                                        }
+                                    });
+                                }, { threshold: 0.5 });
+
+                                observer.observe(document.querySelector("#networth"));
+                            </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section id="bio" class="py-20 bg-gray-900 relative overflow-hidden">
+        <!-- Matrix Ones and Zeros Background Animation -->
+        <canvas id="bio-matrix-bg" class="absolute inset-0 w-full h-full z-0 pointer-events-none"></canvas>
+        <!-- Robot SVG -->
+        <div id="robot-walker" class="absolute left-1/2 transform -translate-x-1/2 z-10" style="bottom: 40px; width: 80px; height: 120px; pointer-events: none;">
+            <!-- Simple SVG Robot -->
+            <svg width="80" height="120" viewBox="0 0 80 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Body -->
+                <rect x="20" y="40" width="40" height="50" rx="10" fill="#a78bfa" stroke="#7c3aed" stroke-width="3"/>
+                <!-- Head -->
+                <rect x="25" y="15" width="30" height="30" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="3"/>
+                <!-- Eyes -->
+                <circle cx="35" cy="30" r="4" fill="#7c3aed"/>
+                <circle cx="45" cy="30" r="4" fill="#7c3aed"/>
+                <!-- Antenna -->
+                <rect x="38" y="5" width="4" height="12" rx="2" fill="#a78bfa"/>
+                <circle cx="40" cy="5" r="3" fill="#7c3aed"/>
+                <!-- Arms -->
+                <rect x="10" y="55" width="10" height="30" rx="5" fill="#a78bfa"/>
+                <rect x="60" y="55" width="10" height="30" rx="5" fill="#a78bfa"/>
+                <!-- Legs -->
+                <rect x="28" y="90" width="7" height="25" rx="3.5" fill="#7c3aed" id="left-leg"/>
+                <rect x="45" y="90" width="7" height="25" rx="3.5" fill="#7c3aed" id="right-leg"/>
+            </svg>
+        </div>
+        <script>
+        // Matrix ones and zeros background (purple shades)
+        (function() {
+            const canvas = document.getElementById('bio-matrix-bg');
+            const ctx = canvas.getContext('2d');
+            let width, height, fontSize, columns, drops;
+            function resize() {
+                width = canvas.width = canvas.offsetWidth = canvas.parentElement.offsetWidth;
+                height = canvas.height = canvas.offsetHeight = 500;
+                fontSize = 20;
+                columns = Math.floor(width / fontSize);
+                drops = Array(columns).fill(1);
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            function draw() {
+                ctx.fillStyle = 'rgba(24, 16, 48, 0.18)';
+                ctx.fillRect(0, 0, width, height);
+                ctx.font = fontSize + "px monospace";
+                for (let i = 0; i < columns; i++) {
+                    const text = Math.random() > 0.5 ? "1" : "0";
+                    // Random purple shades
+                    ctx.fillStyle = Math.random() > 0.5 ? "#a78bfa" : "#7c3aed";
+                    ctx.globalAlpha = 0.5 + Math.random() * 0.4;
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                    if (drops[i] * fontSize > height && Math.random() > 0.975) {
+                        drops[i] = 0;
+                    }
+                    drops[i]++;
+                }
+                ctx.globalAlpha = 1;
+                requestAnimationFrame(draw);
+            }
+            draw();
+        })();
+
+        // Robot walking up and down animation
+        (function() {
+            const robot = document.getElementById('robot-walker');
+            let direction = 1;
+            let pos = 40; // bottom px
+            let step = 0;
+            function animate() {
+                // Move up and down between 40px and 220px from bottom
+                pos += direction * 1.2;
+                if (pos > 220) direction = -1;
+                if (pos < 40) direction = 1;
+                robot.style.bottom = pos + "px";
+                // Simple leg swing animation
+                step += 0.15;
+                const leftLeg = robot.querySelector('#left-leg');
+                const rightLeg = robot.querySelector('#right-leg');
+                leftLeg.setAttribute('transform', `rotate(${Math.sin(step)*18},31.5,90)`);
+                rightLeg.setAttribute('transform', `rotate(${-Math.sin(step)*18},48.5,90)`);
+                requestAnimationFrame(animate);
+            }
+            animate();
+        })();
+        </script>
+        <div class="relative z-10">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-16 text-center title-font neon-text">Professional Bio</h2>
+                <div class="flex flex-col lg:flex-row items-center justify-center gap-12">
+                    <!-- 3D Card -->
+                    <div class="w-full lg:w-1/3 flex justify-center">
+                        <div class="card-3d w-64 h-80 bg-gradient-to-br from-purple-700 to-pink-600 rounded-xl p-1 glow-box">
+                            <div class="w-full h-full bg-gray-900 rounded-lg overflow-hidden flex flex-col">
+                                <div class="h-48 bg-gray-800 flex items-center justify-center">
+                                    <i class="fas fa-user-tie text-6xl text-pink-400"></i>
+                                </div>
+                                <div class="p-4 flex-grow">
+                                    <h3 class="text-xl font-bold text-white mb-2">Current Position</h3>
+                                    <p class="text-gray-300 text-sm">Support Technician </p>
+                                    <p class="text-gray-400 text-xs mt-2">STC Inc.USA.Remote</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bio Text -->
+                    <div class="w-full lg:w-1/2">
+                        <div class="bg-gray-800 bg-opacity-70 backdrop-blur-md rounded-xl p-8 border border-gray-700">
+                            <h3 class="text-2xl font-bold mb-4 text-pink-400">About Sean</h3>
+                            <p class="text-gray-300 mb-4">
+                                Sean Takunda Chipidza is a seasoned software engineer with a passion for crafting innovative and scalable solutions. With over a year of experience in the tech industry, Sean has honed his skills in software architecture, full-stack development, and cloud computing. He has a proven track record of leading cross-functional teams to deliver high-quality software products that solve complex business challenges.
+
+                                Sean's expertise spans a wide range of technologies, including JavaScript, Python, Java, and modern frameworks like React, Angular, and Node.js. He is also proficient in DevOps practices, leveraging tools such as Docker, Kubernetes, and CI/CD pipelines to streamline development workflows and ensure seamless deployments.
+
+                                Throughout his career, Sean has contributed to the success of multiple high-profile projects, from building enterprise-grade applications to designing microservices architectures for distributed systems. His commitment to continuous learning has kept him at the forefront of emerging technologies, including artificial intelligence, machine learning, and blockchain.
+
+                                Beyond his technical acumen, Sean is a strong advocate for clean code, agile methodologies, and mentorship. He takes pride in fostering a collaborative environment where team members can thrive and innovate. His dedication to excellence and passion for technology make him a valuable asset to any organization looking to drive digital transformation and achieve sustainable growth.
+                            </p>
+                            <p class="text-gray-300 mb-6">
+                                Currently working as a Support Technician at STC Inc., Sean specializes in networking solutions and VPN configurations. 
+                                His role involves designing, implementing, and maintaining secure network infrastructures that enable seamless 
+                                communication and data transfer for remote teams. Sean has extensive experience in configuring and managing VPNs, 
+                                ensuring secure and encrypted connections for users across various locations. 
+
+                                He is adept at troubleshooting complex network issues, identifying bottlenecks, and optimizing performance to 
+                                ensure uninterrupted operations. Sean's expertise extends to firewall configurations, network monitoring, and 
+                                implementing best practices for cybersecurity to safeguard sensitive data. 
+
+                                In addition to his technical skills, Sean collaborates closely with cross-functional teams to understand their 
+                                networking needs and provide tailored solutions. He also stays updated with the latest advancements in networking 
+                                technologies, continuously enhancing his skill set to deliver cutting-edge solutions. His dedication to excellence 
+                                and proactive approach make him an invaluable asset in maintaining the reliability and security of STC Inc.'s 
+                                network infrastructure.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-graduation-cap text-white"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-400 text-sm">Education</p>
+                                        <p class="text-white font-medium">TCFL<br>St Johns<br>GV2<br>Coursera<br>Cyberray</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-briefcase text-white"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-400 text-sm">Experience</p>
+                                        <p class="text-white font-medium">12+ Months</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Career Timeline -->
+                <div class="mt-16 max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold mb-8 text-center text-pink-400">Career Journey</h3>
+                    <div class="relative">
+                        <!-- Timeline line -->
+                        <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-pink-500 to-purple-600 transform -translate-x-1/2"></div>
+                        <!-- Timeline items -->
+                        <div class="space-y-8">
+                            <!-- Item 1 -->
+                            <div class="relative md:flex justify-between items-center">
+                                <div class="md:w-5/12 mb-4 md:mb-0 md:pr-8 text-right">
+                                    <h4 class="text-xl font-bold text-white">STC Inc.</h4>
+                                    <p class="text-pink-400">CEO | 2023-Forever</p>
+                                    <p class="text-gray-400 text-sm">Driving innovation and delivering cutting-edge solutions for a better tomorrow.</p>
+                                </div>
+                                <div class="hidden md:block w-2/12 flex justify-center">
+                                    <div class="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center glow-box">
+                                        <div class="w-4 h-4 bg-white rounded-full"></div>
+                                    </div>
+                                </div>
+                                <div class="md:w-5/12 md:pl-8">
+                                    <div class="bg-gray-800 p-4 rounded-lg border-l-4 border-pink-500 md:border-l-0 md:border-r-4">
+                                        <p class="text-gray-300">Led a small team in a startup to develop cost-effective solutions, boosting customer satisfaction by 30%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="relative md:flex justify-between items-center">
+                                <div class="md:w-5/12 order-3 md:pl-8">
+                                    <h4 class="text-xl font-bold text-white">Owner OF STC Inc.</h4>
+                                    <p class="text-purple-400">SINCE| 2023-Present</p>
+                                    <p class="text-gray-400 text-sm">Oversaw technology infrastructure and product development</p>
+                                </div>
+                                <div class="hidden md:block w-2/12 flex justify-center order-2">
+                                    <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center glow-box">
+                                        <div class="w-4 h-4 bg-white rounded-full"></div>
+                                    </div>
+                                </div>
+                                <div class="md:w-5/12 order-1 md:pr-8 text-right mb-4 md:mb-0">
+                                    <div class="bg-gray-800 p-4 rounded-lg border-l-4 border-purple-500 md:border-l-0 md:border-r-4">
+                                        <p class="text-gray-300">
+                                            Currently working on 5 exciting projects including a food ordering site, a dating platform, an e-commerce store, a task management app, and a fitness tracking application. Each project is aimed at solving real-world problems with innovative solutions.
+                                        </p>
+                                        <p class="text-gray-300">
+                                            Additionally, developing a platform where people can invest their money, which is then allocated to farmers. Investors receive a 20% return on their investment after 5 months, promoting sustainable agriculture and financial growth.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="relative md:flex justify-between items-center">
+                                <div class="md:w-5/12 mb-4 md:mb-0 md:pr-8 text-right">
+                                    <h4 class="text-xl font-bold text-white">Startup Founder</h4>
+                                    <p class="text-pink-400">2024-Present</p>
+                                    <p class="text-gray-400 text-sm">Founded  successful SaaS company</p>
+                                    <p class="text-gray-300">Aimed to provide innovative cloud-based solutions for small businesses, focusing on streamlining operations, enhancing productivity, and reducing costs through automation and data-driven insights.</p>
+                                </div>
+                                <div class="hidden md:block w-2/12 flex justify-center">
+                                    <div class="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center glow-box">
+                                        <div class="w-4 h-4 bg-white rounded-full"></div>
+                                    </div>
+                                </div>
+                                <div class="md:w-5/12 md:pl-8">
+                                    <div class="bg-gray-800 p-4 rounded-lg border-l-4 border-pink-500 md:border-l-0 md:border-r-4">
+                                        <p class="text-gray-300">Built company from ground upto now with a monthly revenue of $200+</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gradient-to-b from-purple-900 to-gray-900 relative overflow-hidden">
+        <!-- Animated Equations & Binary Canvas Background -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <canvas id="equation-canvas" class="w-full h-full"></canvas>
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-4xl font-bold mb-16 text-center title-font neon-text">Skills</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <!-- Skill Item -->
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-white font-medium">HTML</span>
+                        <span class="text-gray-300">100%</span>
+                    </div>
+                    <div class="w-full bg-gray-800 rounded-full h-4">
+                        <div class="bg-lime-500 h-4 rounded-full" style="width: 100%;"></div>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-white font-medium">CSS</span>
+                        <span class="text-gray-300">80%</span>
+                    </div>
+                    <div class="w-full bg-gray-800 rounded-full h-4">
+                        <div class="bg-lime-500 h-4 rounded-full" style="width: 80%;"></div>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-white font-medium">JavaScript</span>
+                        <span class="text-gray-300">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-800 rounded-full h-4">
+                        <div class="bg-lime-500 h-4 rounded-full" style="width: 70%;"></div>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-white font-medium">Java</span>
+                        <span class="text-gray-300">60%</span>
+                    </div>
+                    <div class="w-full bg-gray-800 rounded-full h-4">
+                        <div class="bg-lime-500 h-4 rounded-full" style="width: 60%;"></div>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-white font-medium">Python</span>
+                        <span class="text-gray-300">75%</span>
+                    </div>
+                    <div class="w-full bg-gray-800 rounded-full h-4">
+                        <div class="bg-lime-500 h-4 rounded-full" style="width: 75%;"></div>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-white font-medium">C</span>
+                        <span class="text-gray-300">65%</span>
+                    </div>
+                    <div class="w-full bg-gray-800 rounded-full h-4">
+                        <div class="bg-lime-500 h-4 rounded-full" style="width: 65%;"></div>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-white font-medium">C++</span>
+                        <span class="text-gray-300">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-800 rounded-full h-4">
+                        <div class="bg-lime-500 h-4 rounded-full" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+        // Animated floating equations and binary background for skills section
+        document.addEventListener('DOMContentLoaded', function () {
+            const canvas = document.getElementById('equation-canvas');
+            const ctx = canvas.getContext('2d');
+            let equations = [];
+            let binaries = [];
+            const equationList = [
+                "E = mc²", "a² + b² = c²", "F = ma", "∫ f(x) dx", "π ≈ 3.1416", "Δy/Δx", "Σ n=1^∞ 1/n²", "sin(θ)", "λ = h/p", "x = (-b±√(b²-4ac))/2a", "P(A∩B)", "∇·E = ρ/ε₀"
+            ];
+            function resize() {
+                canvas.width = canvas.offsetWidth || canvas.clientWidth || canvas.parentElement.offsetWidth;
+                canvas.height = canvas.offsetHeight || canvas.clientHeight || 500;
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            // Equations
+            function randomEquation() {
+                return equationList[Math.floor(Math.random() * equationList.length)];
+            }
+            function randomColor() {
+                const colors = ["#39ff14", "#a78bfa", "#f472b6", "#38bdf8", "#facc15"];
+                return colors[Math.floor(Math.random() * colors.length)];
+            }
+            function spawnEquation() {
+                const fontSize = Math.random() * 18 + 18;
+                equations.push({
+                    text: randomEquation(),
+                    x: Math.random() * (canvas.width - 100),
+                    y: canvas.height + fontSize,
+                    font: `${fontSize}px Orbitron, monospace`,
+                    color: randomColor(),
+                    speed: Math.random() * 0.5 + 0.3,
+                    alpha: Math.random() * 0.5 + 0.5,
+                    angle: (Math.random() - 0.5) * 0.2
+                });
+            }
+
+            // Binary rain (matrix style)
+            const binaryFontSize = 18;
+            let binaryColumns = 0;
+            let binaryDrops = [];
+            function setupBinary() {
+                binaryColumns = Math.floor(canvas.width / binaryFontSize);
+                binaryDrops = [];
+                for (let i = 0; i < binaryColumns; i++) {
+                    binaryDrops[i] = Math.random() * canvas.height / binaryFontSize;
+                }
+            }
+            setupBinary();
+            window.addEventListener('resize', setupBinary);
+
+            function drawBinary() {
+                ctx.save();
+                ctx.font = binaryFontSize + "px monospace";
+                for (let i = 0; i < binaryColumns; i++) {
+                    const text = Math.random() > 0.5 ? "1" : "0";
+                    ctx.fillStyle = "#39ff14";
+                    ctx.globalAlpha = 0.18 + Math.random() * 0.2;
+                    ctx.fillText(text, i * binaryFontSize, binaryDrops[i] * binaryFontSize);
+                    if (binaryDrops[i] * binaryFontSize > canvas.height && Math.random() > 0.975) {
+                        binaryDrops[i] = 0;
+                    }
+                    binaryDrops[i]++;
+                }
+                ctx.restore();
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                // Draw binary rain first (fills background)
+                drawBinary();
+
+                // Draw floating equations
+                for (let eq of equations) {
+                    ctx.save();
+                    ctx.globalAlpha = eq.alpha;
+                    ctx.font = eq.font;
+                    ctx.fillStyle = eq.color;
+                    ctx.translate(eq.x, eq.y);
+                    ctx.rotate(eq.angle);
+                    ctx.fillText(eq.text, 0, 0);
+                    ctx.restore();
+                    eq.y -= eq.speed;
+                    eq.x += Math.sin(eq.y / 40) * 0.5;
+                }
+                equations = equations.filter(eq => eq.y > -40);
+                if (equations.length < 22) spawnEquation();
+
+                requestAnimationFrame(draw);
+            }
+            draw();
+        });
+        </script>
+    </section>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all">
+                    <div class="h-48 bg-gradient-to-r from-pink-500 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-microphone text-6xl text-white opacity-70"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Keynote Speaking</h3>
+                        <p class="text-gray-400 text-sm">Global Tech Summit 2023</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all">
+                    <div class="h-48 bg-gradient-to-r from-purple-700 to-pink-600 flex items-center justify-center">
+                        <i class="fas fa-users text-6xl text-white opacity-70"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Team Leadership</h3>
+                        <p class="text-gray-400 text-sm">Innovation team at STC inc.</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all">
+                    <div class="h-48 bg-gradient-to-r from-pink-600 to-purple-700 flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-6xl text-white opacity-70"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Innovation Lab</h3>
+                        <p class="text-gray-400 text-sm">Developing future technologies</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all">
+                    <div class="h-48 bg-gradient-to-r from-purple-800 to-pink-700 flex items-center justify-center">
+                        <i class="fas fa-globe text-6xl text-white opacity-70"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Global Impact</h3>
+                        <p class="text-gray-400 text-sm">Projects to be across all continents</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all">
+                    <div class="h-48 bg-gradient-to-r from-pink-700 to-purple-800 flex items-center justify-center">
+                        <i class="fas fa-chalkboard-teacher text-6xl text-white opacity-70"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Mentorship</h3>
+                        <p class="text-gray-400 text-sm">Guiding the next generation to be greater </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 relative">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center title-font neon-text">Get In Touch</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
+                <!-- Contact Form -->
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-800 bg-opacity-70 backdrop-blur-md rounded-xl p-8 border border-gray-700 glow-box">
+                        <h3 class="text-2xl font-bold mb-6 text-pink-400">Send a Message</h3>
+                        
+                        <form id="whatsapp-form"></form>
+                            <div class="mb-6">
+                                <input type="text" id="name" placeholder="Your Name" class="w-full px-4 py-3 bg-transparent text-white contact-input rounded-none" required>
+                            </div>
+                            <div class="mb-6">
+                                <input type="email" id="email" placeholder="Your Email" class="w-full px-4 py-3 bg-transparent text-white contact-input rounded-none" required>
+                            </div>
+                            <div class="mb-6">
+                                <textarea id="message" placeholder="Your Message" rows="5" class="w-full px-4 py-3 bg-transparent text-white contact-input rounded-none" required></textarea>
+                            </div>
+                            <button type="button" onclick="sendMessage()" class="w-full bg-pink-600 hover:bg-pink-700 text-white px-6 py-4 rounded-full font-bold btn-neon transition-all">
+                                Send Message <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+               
+    <script>
+        function sendMessage() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                const whatsappUrl = `https://wa.me/263782582932?text=${encodeURIComponent(
+                    `Hello, my name is ${name}. My email is ${email}. Here is my message: ${message}`
+                )}`;
+                window.open(whatsappUrl, '_blank');
+            } else {
+                alert('Please fill in all fields before sending the message.');
+            }
+        }
+    </script>
+                
+                <!-- Contact Info -->
+                <div class="lg:w-1/2">
+                    <div class="h-full bg-gradient-to-br from-purple-900 to-pink-800 rounded-xl p-8 glow-box">
+                        <h3 class="text-2xl font-bold mb-6 text-white">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-pink-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-white mb-1">Location</h4>
+                                    <p class="text-gray-300">Harare Zimbabwe</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-pink-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-white mb-1">Email</h4>
+                                    <p class="text-gray-300">seantchipidza4@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone-alt text-pink-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-white mb-1">Phone</h4>
+                                    <p class="text-gray-300">+263782582932</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-calendar-alt text-pink-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-white mb-1">Schedule Meeting</h4>
+                                    <button onclick="openScheduleModal()" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full font-bold btn-neon transition-all">
+                                        Schedule a Meeting
+                                    </button>
+
+                                    <!-- Schedule Meeting Modal -->
+                                    <div id="scheduleModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+                                        <div class="bg-gray-800 rounded-lg p-6 w-full max-w-md">
+                                            <h3 class="text-2xl font-bold text-white mb-4">Select a Time Slot</h3>
+                                            <form id="scheduleForm">
+                                                <div class="mb-4">
+                                                    <label for="date" class="block text-gray-300 mb-2">Date</label>
+                                                    <input type="date" id="date" class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg" required>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <label for="time" class="block text-gray-300 mb-2">Time</label>
+                                                    <input type="time" id="time" class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg" required>
+                                                </div>
+                                                <div class="flex justify-end space-x-4">
+                                                    <button type="button" onclick="closeScheduleModal()" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-lg">
+                                                        Cancel
+                                                    </button>
+                                                    <button type="submit" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg">
+                                                        Schedule
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <script>
+                                        function openScheduleModal() {
+                                            document.getElementById('scheduleModal').classList.remove('hidden');
+                                        }
+
+                                        function closeScheduleModal() {
+                                            document.getElementById('scheduleModal').classList.add('hidden');
+                                        }
+
+                                        document.getElementById('scheduleForm').addEventListener('submit', function (e) {
+                                            e.preventDefault();
+                                            const date = document.getElementById('date').value;
+                                            const time = document.getElementById('time').value;
+
+                                            if (date && time) {
+                                                const whatsappUrl = `https://wa.me/263782582932?text=${encodeURIComponent(
+                                                    `Meeting scheduled on ${date} at ${time}`
+                                                )}`;
+                                                window.open(whatsappUrl, '_blank');
+                                                closeScheduleModal();
+                                            } else {
+                                                alert('Please select both a date and time.');
+                                            }
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-lg font-bold text-white mb-4">Connect Socially</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 bg-white bg-opacity-10 hover:bg-pink-600 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-linkedin-in text-white"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-white bg-opacity-10 hover:bg-pink-600 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-twitter text-white"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-white bg-opacity-10 hover:bg-pink-600 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-instagram text-white"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-white bg-opacity-10 hover:bg-pink-600 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-github text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <script>
+        // Animate net worth counter
+        function animateValue(id, start, end, duration) {
+            const obj = document.getElementById(id);
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                obj.innerHTML = "$" + value.toLocaleString();
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+        
+        // Start animation when net worth section is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateValue("networth-counter", 0, 7200000, 2000);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(document.querySelector("#networth"));
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.md\\:hidden');
+        const mobileMenu = document.querySelector('.md\\:flex');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            mobileMenu.classList.toggle('flex-col');
+            mobileMenu.classList.toggle('absolute');
+            mobileMenu.classList.toggle('top-16');
+            mobileMenu.classList.toggle('left-0');
+            mobileMenu.classList.toggle('right-0');
+            mobileMenu.classList.toggle('bg-black');
+            mobileMenu.classList.toggle('bg-opacity-90');
+            mobileMenu.classList.toggle('p-4');
+            mobileMenu.classList.toggle('space-y-4');
+            mobileMenu.classList.toggle('space-x-0');
+            mobileMenu.classList.toggle('backdrop-blur-md');
+        });
+  
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a2a3a, #2d3b4d);
+            color: #e2e8f0;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* AI Assistant Styles */
+        .ai-assistant {
+            position: fixed;
+            top: 300px;
+            left: 30px;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        .ai-button {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #8a2be2, #6a0dad);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(138, 43, 226, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.7);
+        }
+
+        .ai-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+        }
+
+        .ai-button span {
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .ai-chat-container {
+            position: fixed;
+            bottom: 120px;
+            left: 30px;
+            width: 350px;
+            height: 450px;
+            background: rgba(15, 23, 42, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(86, 119, 252, 0.2);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transform: scale(0.9);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 1001;
+        }
+
+        .ai-chat-container.active {
+            transform: scale(1);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .chat-header {
+            padding: 15px 20px;
+            background: rgba(30, 41, 59, 0.8);
+            border-bottom: 1px solid rgba(86, 119, 252, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .chat-header h3 {
+            color: #a78bfa;
+            font-size: 1.2rem;
+            margin-left: 15px;
+        }
+
+        .chat-header i {
+            font-size: 1.3rem;
+            color: #a78bfa;
+            background: rgba(86, 119, 252, 0.1);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .close-btn {
+            background: rgba(239, 68, 68, 0.2);
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            color: #f87171;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .close-btn:hover {
+            background: rgba(239, 68, 68, 0.3);
+            transform: rotate(90deg);
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            background: rgba(10, 15, 30, 0.5);
+        }
+
+        .message {
+            max-width: 85%;
+            padding: 12px 18px;
+            margin-bottom: 15px;
+            border-radius: 18px;
+            line-height: 1.5;
+            position: relative;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .ai-message {
+            background: rgba(86, 119, 252, 0.15);
+            border: 1px solid rgba(86, 119, 252, 0.2);
+            align-self: flex-start;
+            border-bottom-left-radius: 5px;
+        }
+
+        .user-message {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(86, 119, 252, 0.2);
+            align-self: flex-end;
+            border-bottom-right-radius: 5px;
+        }
+
+        .chat-input {
+            display: flex;
+            padding: 15px;
+            background: rgba(30, 41, 59, 0.8);
+            border-top: 1px solid rgba(86, 119, 252, 0.2);
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 12px 15px;
+            border-radius: 25px;
+            border: none;
+            background: rgba(15, 23, 42, 0.7);
+            color: white;
+            font-size: 0.95rem;
+            outline: none;
+            border: 1px solid rgba(86, 119, 252, 0.2);
+        }
+
+        .chat-input input:focus {
+            border-color: #a78bfa;
+        }
+
+        .chat-input input::placeholder {
+            color: #94a3b8;
+        }
+
+        .chat-input button {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: none;
+            background: linear-gradient(135deg, #8a2be2, #6a0dad);
+            color: white;
+            margin-left: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .chat-input button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #9a3bf2, #7a1dbd);
+        }
+
+        .typing-indicator {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background: rgba(86, 119, 252, 0.15);
+            border-radius: 18px;
+            width: fit-content;
+            margin-bottom: 15px;
+            align-self: flex-start;
+            border: 1px solid rgba(86, 119, 252, 0.2);
+            display: none;
+        }
+
+        .typing-indicator span {
+            width: 8px;
+            height: 8px;
+            background-color: #a78bfa;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 2px;
+            animation: typing 1.4s infinite ease-in-out;
+        }
+
+        .typing-indicator span:nth-child(1) { animation-delay: 0s; }
+        .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-5px); }
+        }
+
+        @media (max-width: 768px) {
+            .ai-chat-container {
+                width: 300px;
+                height: 400px;
+                left: 15px;
+                bottom: 100px;
+            }
+            
+            .ai-assistant {
+                left: 15px;
+                bottom: 20px;
+            }
+            
+            .ai-button {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- AI Assistant -->
+    <div class="ai-assistant">
+        <div class="ai-button">
+            <span>AI</span>
+        </div>
+        <div class="ai-chat-container">
+            <div class="chat-header">
+                <div class="header-left">
+                    <i class="fas fa-robot"></i>
+                    <h3>STC</h3>
+                </div>
+                <button class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages">
+                <div class="message ai-message">
+                    Hello! I'm your AI assistant ready to answer any questions you have. How can I help you today?
+                </div>
+                <div class="typing-indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Ask me anything...">
+                <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const aiButton = document.querySelector('.ai-button');
+            const chatContainer = document.querySelector('.ai-chat-container');
+            const userInput = document.getElementById('user-input');
+            const sendButton = document.getElementById('send-btn');
+            const chatMessages = document.querySelector('.chat-messages');
+            const typingIndicator = document.querySelector('.typing-indicator');
+            const closeButton = document.querySelector('.close-btn');
+            
+            // Toggle chat visibility
+            aiButton.addEventListener('click', function() {
+                chatContainer.classList.toggle('active');
+            });
+            
+            // Close chat when clicking X button
+            closeButton.addEventListener('click', function() {
+                chatContainer.classList.remove('active');
+            });
+            
+            // Send message function
+            function sendMessage() {
+                const message = userInput.value.trim();
+                if (message) {
+                    // Add user message to chat
+                    addMessage(message, 'user');
+                    userInput.value = '';
+                    
+                    // Show typing indicator
+                    typingIndicator.style.display = 'flex';
+                    
+                    // Simulate AI thinking
+                    setTimeout(() => {
+                        typingIndicator.style.display = 'none';
+                        const aiResponse = generateAIResponse(message);
+                        addMessage(aiResponse, 'ai');
+                        
+                        // Auto scroll to bottom
+                        chatMessages.scrollTop = chatMessages.scrollHeight;
+                    }, 1000);
+                }
+            }
+            
+            // Send message on button click
+            sendButton.addEventListener('click', sendMessage);
+            
+            // Send message on Enter key
+            userInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+            
+            // Add message to chat
+            function addMessage(text, sender) {
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('message', `${sender}-message`);
+                messageElement.textContent = text;
+                chatMessages.appendChild(messageElement);
+                
+                // Auto scroll to bottom
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            // Generate AI response for any topic
+            function generateAIResponse(question) {
+                const lowerQuestion = question.toLowerCase();
+                
+                // Responses for various topics
+                const responses = {
+                    'hello': "Hello! How can I assist you today?",
+                    'makadii': "Tiripo makadiiwo?",
+                    'wadii': "wadii.",
+                    'unonzani': "Ndigori mubetseri waSean Chipidza ndinonzi STC.",
+                    'ndokurova': "Ini ndokurovawo chete handina muviri dai ndatokurovaso.",
+                    'sup': "Wassup.",'Maswerasei': "Ndaswera Maswerawo.",
+                     'usafarise':"Usafarisewo",
+                     'mboro':"Zviriko here izvi zvezvinyadzi",
+                     'mhata':"Zviriko here izvi zvezvinyadzi",
+                    'hi': "Hi there! What would you like to know?",
+                    'how are you': "I'm just a program, but I'm functioning perfectly! How can I help you?",
+                    'name': "I'm your AI assistant! You can call me Alex.",
+                    'weather': "I don't have real-time weather data, but I recommend checking a weather service for the latest forecast.",
+                    'time': `The current time is ${new Date().toLocaleTimeString()}.`,
+                    'date': `Today is ${new Date().toLocaleDateString()}.`,
+                    'thank you': "You're welcome! Is there anything else I can help with?",
+                    'bye': "Goodbye! Feel free to ask more questions anytime!",
+                    'joke': "Why don't scientists trust atoms? Because they make up everything!",
+                    'capital of france': "The capital of France is Paris.",
+                    'population of china': "As of 2023, China's population is approximately 1.4 billion.",
+                    'meaning of life': "That's a profound question! Many philosophers have debated this. From a scientific perspective, life is about survival and reproduction, but humans often find meaning in relationships, achievements, and personal growth.",
+                    'history of computers': "Computing history begins with mechanical devices like the abacus. The first electronic computers emerged in the 1940s, followed by transistors in the 1950s, integrated circuits in the 1960s, and personal computers in the 1970s-80s. The internet revolutionized computing in the 1990s.",
+                    'ai future': "AI is expected to transform many industries. Key trends include more natural language processing, improved computer vision, AI in healthcare diagnostics, autonomous vehicles, and more personalized digital experiences. Ethical considerations are increasingly important.",
+                    'healthy diet': "A healthy diet includes a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Limit processed foods, sugar, and excessive salt. Stay hydrated and balance calorie intake with physical activity.",
+                    'exercise tips': "Aim for 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity weekly. Include strength training twice a week. Start gradually, find activities you enjoy, and stay consistent. Always warm up and cool down.",
+                    'book recommendation': "Some highly regarded books: 'Sapiens' by Yuval Noah Harari (history), 'The Alchemist' by Paulo Coelho (fiction), 'Atomic Habits' by James Clear (self-improvement), and 'Educated' by Tara Westover (memoir).",
+                    'travel destinations': "Popular destinations include Japan for culture, Italy for history and food, New Zealand for nature, Costa Rica for eco-tourism, and Greece for islands and history. Where would you like to go?",
+                    'programming advice': "Start with fundamentals, practice regularly, build projects, learn to debug effectively, read others' code, and don't be afraid to ask for help. Consistency is more important than intensity when learning.",
+                    'relationship advice': "Communication is key. Listen actively, express appreciation regularly, respect boundaries, and make time for each other. Remember that all relationships require effort from both sides.",
+                    'career tips': "Continuously learn new skills, build a professional network, seek mentors, set clear goals, and maintain work-life balance. Don't be afraid to take calculated risks in your career.",
+                    'mental health': "Prioritize self-care, maintain social connections, get enough sleep, exercise regularly, and consider speaking with a professional if you're struggling. It's okay to ask for help.",
+                    'cooking tips': "Start with simple recipes, prepare ingredients before cooking (mise en place), taste as you go, don't overcrowd pans, and season in layers. Practice makes perfect!",
+                    'space facts': "There are more stars in the universe than grains of sand on all Earth's beaches. A day on Venus is longer than its year. Neutron stars are so dense that a teaspoonful would weigh about a billion tons."
+                };
+                
+                // Find the best matching response
+                for (const [key, value] of Object.entries(responses)) {
+                    if (lowerQuestion.includes(key)) {
+                        return value;
+                    }
+                }
+                
+                // Default response for any question
+                return "Thanks for your question! As an AI, I'm designed to provide helpful information on a wide range of topics. Could you provide more details or ask about something else?";
+            }
+        });
+    </script>
+    <!-- Pictures Section -->
+    <section id="pictures" class="py-20 bg-gradient-to-b from-purple-900 to-gray-900 relative">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center title-font neon-text">Pictures</h2>
+            <div id="pictures-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 transition-all duration-700">
+                <!-- Picture 1 -->
+                <div class="picture-card gallery-item bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Picture 1" class="w-full h-56 object-cover transition-transform duration-700">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">At the Summit</h3>
+                        <p class="text-gray-400 text-sm">Captured during a tech conference in 2023.</p>
+                    </div>
+                </div>
+                <!-- Picture 2 -->
+                <div class="picture-card gallery-item bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Picture 2" class="w-full h-56 object-cover transition-transform duration-700">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Team Collaboration</h3>
+                        <p class="text-gray-400 text-sm">Working with the STC Inc. innovation team.</p>
+                    </div>
+                </div>
+                <!-- Picture 3 -->
+                <div class="picture-card gallery-item bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Picture 3" class="w-full h-56 object-cover transition-transform duration-700">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Project Launch</h3>
+                        <p class="text-gray-400 text-sm">Celebrating the launch of a new SaaS product.</p>
+                    </div>
+                </div>
+                <!-- Picture 4 -->
+                <div class="picture-card gallery-item bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Picture 4" class="w-full h-56 object-cover transition-transform duration-700">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Networking Event</h3>
+                        <p class="text-gray-400 text-sm">Connecting with industry leaders.</p>
+                    </div>
+                </div>
+                <!-- Picture 5 -->
+                <div class="picture-card gallery-item bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3c8b?auto=format&fit=crop&w=400&q=80" alt="Picture 5" class="w-full h-56 object-cover transition-transform duration-700">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Workshop Session</h3>
+                        <p class="text-gray-400 text-sm">Hands-on coding workshop.</p>
+                    </div>
+                </div>
+                <!-- Picture 6 -->
+                <div class="picture-card gallery-item bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Picture 6" class="w-full h-56 object-cover transition-transform duration-700">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Office Life</h3>
+                        <p class="text-gray-400 text-sm">A day at the STC Inc. headquarters.</p>
+                    </div>
+                </div>
+                <!-- Picture 7 -->
+                <div class="picture-card gallery-item bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=400&q=80" alt="Picture 7" class="w-full h-56 object-cover transition-transform duration-700">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Brainstorming</h3>
+                        <p class="text-gray-400 text-sm">Creative session with the team.</p>
+                    </div>
+                </div>
+                <!-- Picture 8 -->
+                <div class="picture-card gallery-item bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Picture 8" class="w-full h-56 object-cover transition-transform duration-700">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Celebration</h3>
+                        <p class="text-gray-400 text-sm">Celebrating a major milestone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .picture-card.rotating img {
+                transform: rotateY(360deg);
+            }
+        </style>
+        <script>
+            // Get all picture cards
+            const grid = document.getElementById('pictures-grid');
+            let cards = Array.from(grid.children);
+
+            function shuffleArray(array) {
+                // Fisher-Yates shuffle
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+            }
+
+            cards.forEach(card => {
+                card.addEventListener('click', function () {
+                    // Add rotation
+                    card.classList.add('rotating');
+                    setTimeout(() => {
+                        card.classList.remove('rotating');
+                    }, 700);
+
+                    // Shuffle cards and animate position change
+                    shuffleArray(cards);
+
+                    // Remove all cards from grid
+                    while (grid.firstChild) grid.removeChild(grid.firstChild);
+
+                    // Re-add in new order with fade/slide animation
+                    cards.forEach((c, idx) => {
+                        c.style.opacity = '0';
+                        c.style.transform = 'translateY(30px)';
+                        grid.appendChild(c);
+                        setTimeout(() => {
+                            c.style.transition = 'opacity 0.5s, transform 0.5s';
+                            c.style.opacity = '1';
+                            c.style.transform = 'translateY(0)';
+                        }, 50 + idx * 80);
+                    });
+                });
+            });
+        </script>
+        <!-- Matrix Section -->
+        <section id="matrix" class="py-20 bg-gradient-to-b from-gray-900 to-purple-900 relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+            <canvas id="matrix-canvas" width="1920" height="600" class="w-full h-full"></canvas>
+            </div>
+            <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-4xl font-bold mb-12 text-center title-font neon-text">About STC Inc. & My Role</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                <!-- Matrix Text -->
+                <div class="w-full md:w-2/3 mx-auto bg-gray-800 bg-opacity-80 backdrop-blur-md rounded-xl p-8 border border-gray-700 glow-box">
+                <h3 class="text-2xl font-bold mb-4 text-pink-400">Who We Are</h3>
+                <p class="text-gray-300 mb-4">
+                    <span class="font-bold text-lime-400">STC Inc.</span> is a forward-thinking technology company dedicated to delivering innovative digital solutions that empower businesses and individuals. Our mission is to bridge the gap between ideas and reality through cutting-edge software, secure networking, and creative problem-solving.
+                </p>
+                <h4 class="text-xl font-bold mb-2 text-purple-400">My Role</h4>
+                <p class="text-gray-300">
+                    I am a <span class="font-bold text-lime-400">software developer</span> at STC Inc., specializing in building robust applications, designing scalable systems, and ensuring seamless user experiences. My passion lies in transforming complex challenges into elegant, efficient code—driving the company’s vision forward, one line at a time.
+                </p>
+                </div>
+            </div>
+            </div>
+            <script>
+            // Responsive Matrix effect as background
+            function startMatrix() {
+                const canvas = document.getElementById('matrix-canvas');
+                const ctx = canvas.getContext('2d');
+                function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = 600;
+                }
+                resizeCanvas();
+                window.addEventListener('resize', resizeCanvas);
+
+                const fontSize = 18;
+                let columns = Math.floor(canvas.width / fontSize);
+                let drops = Array(columns).fill(1);
+
+                function drawMatrix() {
+                ctx.fillStyle = 'rgba(0,0,0,0.15)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.font = fontSize + "px monospace";
+                ctx.fillStyle = "#39ff14";
+                for (let i = 0; i < columns; i++) {
+                    const text = Math.random() > 0.5 ? "1" : "0";
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                    }
+                    drops[i]++;
+                }
+                }
+
+                setInterval(drawMatrix, 60);
+
+                // Update columns/drops on resize
+                window.addEventListener('resize', () => {
+                columns = Math.floor(canvas.width / fontSize);
+                drops = Array(columns).fill(1);
+                });
+            }
+            window.addEventListener('DOMContentLoaded', startMatrix);
+            </script>
+        </section>
+    </section>
+      <!-- Footer -->
+    <footer class="bg-black bg-opacity-50 py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-2xl font-bold title-font neon-text">Sean Takunda Chipidza</h2>
+                    <p class="text-gray-400 text-sm mt-1">Innovating the future, one idea at a time and many ideas overtime</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#privacy-policy" class="text-gray-400 hover:text-pink-400 transition">Privacy Policy</a>
+                    <a href="#terms-of-service" class="text-gray-400 hover:text-pink-400 transition">Terms of Service</a>
+                    <a href="#home" class="text-gray-400 hover:text-pink-400 transition">Back to Top</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>© 2025 SEANTCHIPIDZA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    function enforceDesktopLayout() {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            document.body.style.minWidth = "1200px";
+            document.querySelector('.container').style.minWidth = "1200px";
+        }
+    }
+    window.onload = enforceDesktopLayout;
+    window.onresize = enforceDesktopLayout;
+</script>
+
+</body>
+</html>
